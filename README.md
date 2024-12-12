@@ -1,29 +1,26 @@
-# point-collection
+# Point Collection Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+A Vue 3 dashboard application for managing and tracking customer loyalty points. Built with Vite for optimal performance.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Real-time points tracking system
+- Metrics overview displaying:
+  - Total registered customers
+  - Total points issued
+  - Points redeemed
+  - Available points balance
+- Clean and intuitive user interface
+- API integration for live data
 
-## Customize configuration
+## Tech Stack
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Vue 3
+- Vite
+- Axios for API requests
+- Vue Router for navigation
 
 ## Project Setup
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
