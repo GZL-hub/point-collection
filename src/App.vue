@@ -9,11 +9,24 @@
 
 <script>
 import Navigation from './components/dashboard/Navigation.vue'
+import { getPoints } from './services/api'
 
 export default {
   name: 'App',
   components: {
     Navigation
+  },
+  data() {
+    return {
+      points: []
+    }
+  },
+  async created() {
+    try {
+      this.points = await getPoints()
+    } catch (error) {
+      console.error('Error fetching points:', error)
+    }
   }
 }
 </script>
